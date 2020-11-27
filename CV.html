@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="CV.html" class="active">CV</a>
+        <a href="3de wiel.html" class="active">Derde wiel</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">X</a>
+    </nav>
+    <h1>CV</h1>
+    <p>Open hier mijn cv.</p>
+    <a href="CV.pdf"><p>Klik op mij</p>
+    <script>
+		function myFunction() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+    	x.className += " responsive";
+  		} else {
+    	x.className = "topnav";
+		}
+		}
+	</script>
+
+  </body>
+</html>

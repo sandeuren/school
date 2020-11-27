@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3de wiel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="topnav" id="myTopnav">
+		  <a href="index.html" class="active">Home</a>
+      <a href="CV.html" class="active">CV</a>
+		  <a href="3de wiel.html" class="active">Derde wiel</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">X</a>
+    </nav>
+    <h1>Derde wiel</h1>
+    <p>Dit is een wiel.</p>
+    <p><img src="img/wiel.png" alt="wiel"></p>
+    <p>Ik heb geen idee wat je met deze info moet.<br> Ik bedoel wat moet je met een wiel op je scherm.</p>
+
+    <script>
+      function myFunction() {
+  	  var x = document.getElementById("myTopnav");
+   	  if (x.className === "topnav") {
+   	  x.className += " responsive";
+   	  } else {
+   	  x.className = "topnav";
+	 	  }
+	    }
+    </script>
+  </body>
+</html>

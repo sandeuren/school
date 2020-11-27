@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+  	<title>Snake</title>
+	</head>
+	<body>
+		<div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">home</a>
+      <a href="CV.html" class="active">CV</a>
+      <a href="3de wiel.html" class="active">Derde wiel</a>
+			<a href="dingkie.html" class="active">Sociale media</a>
+		  <a href="snake.html" class="active">Snake</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+    </div>
+		<h4> gebruik WASD om te spelen</h4>
+		<h2> werkt niet op telefoon</h2>
+		<p id="p1">SCORE:</p> <p id="score">0</p>
+		<p id="p2">HIGHSCORE:</p> <p id="high">0</p>
+		<canvas width="400" height="400" class="games" id="game"></canvas>
+		<script>
+			function myFunction() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+    	x.className += " responsive";
+  		} else {
+    	x.className = "topnav";
+  	 	}
+			}
+		</script>
+		<div id="game">
+		<script src="snakescript.js" ></script>
+		</div>
+	</body>
+</html>
